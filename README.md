@@ -1,5 +1,5 @@
 # ContactInformationApp
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
+## This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
 This incudes the use of,
 Libraries like -
 -ngx-bootstrap
@@ -9,7 +9,7 @@ and Frameworks like -
 Bootstrap4
 ----------------------------------------------------------------------------------
 # Functionalities - 
-This app enables users to -
+This app enables users to 
 1.View their contacts
 2.create new contact 
 3.update a contact
