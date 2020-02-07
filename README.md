@@ -22,7 +22,7 @@ Note - This is just a representation of the idea, it is not functional.
 
 # Steps for running the project on local environment- 
 Prerequisites -  
-Node.js and Angular cli (ver.8.3.24) should be installed in the server machine.  
+Node.js and Angular cli (ver.8.3.24) should be installed on the machine.  
 1.At root level of the project, in the command prompt, give the below command -  
 --> npm install  
 This will install all the dependencies listed in the package.json file and node_modules folder will be created.  
