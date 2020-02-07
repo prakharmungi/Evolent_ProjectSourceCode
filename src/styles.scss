@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+$theme-color-blue: #72a9e3;
+
+body {
+  background: #f2f2f2 url("./assets/images/greenBG.jpg");
+  color: #4d4d4d;
+}
+
+.vertical-space-20px {
+  padding: 20px 0;
+}
+
+.vertical-space-10px {
+  padding: 10px 0;
+}
+
+.horizontal-space-10px {
+  padding: 0 10px;
+}
+
+.fas {
+  cursor: pointer;
+}
+
+.fas:hover,
+.theme-color {
+  color: $theme-color-blue;
+}
+
+.theme-color-border {
+  border: 1px solid #72a9e3;
+}

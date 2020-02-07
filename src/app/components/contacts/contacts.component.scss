@@ -1,0 +1,38 @@
+$theme-color-blue: #72a9e3;
+
+
+.headings-row{
+  font-size: 20px;
+}
+
+.add-contacts-section {
+  border-left: 3px solid $theme-color-blue;
+  padding-left: 10px;
+
+  .shift-right {
+    float: right;
+  }
+}
+.add-contacts-button-section{
+
+  span {
+    color: $theme-color-blue;
+  }
+}
+.add-contacts-button-section,
+.add-contacts-section {
+  button {
+    background-color: $theme-color-blue;
+  }
+}
+.headings-row {
+  border-bottom: 3px solid $theme-color-blue;
+  div {
+    text-align: center;
+  }
+}
+.data-row {
+  div {
+    text-align: center;
+  }
+}

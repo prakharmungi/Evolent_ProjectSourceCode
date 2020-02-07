@@ -1,0 +1,64 @@
+    <div class="row add-contacts-button-section vertical-space-10px">
+        <div class="col-lg-9">
+        </div>
+        <div class="col-lg-3">
+            <span class="horizontal-space-10px">Add new Contact</span>
+            <button class="btn btn-primary" (click)="addBtnClicked()"><i class="fas fa-user-plus"></i></button>
+        </div>
+    </div>
+    <div class="row table-container horizontal-space-10px">
+        <div class="col-lg-9">
+            <div class="row headings-row vertical-space-20px">
+                <div class="col-lg-3" *ngFor="let heading of headings">
+                    {{heading}}
+                </div>
+                <div class="col-lg-3">
+                    
+                </div>
+            </div>
+            <div class="row data-row vertical-space-10px" [ngClass]="{'theme-color-border': updateIconClicked === i || shareIconClicked === i}" *ngFor="let contactData of contactsData; let i = index">
+                <div class="col-lg-3">
+                    {{contactData.firstName}} {{contactData.lastName}}
+                </div>
+                <div class="col-lg-3">
+                    {{contactData.email}}
+                </div>
+                <div class="col-lg-3">
+                    {{contactData.phNumber}}
+                </div>
+                <div class="col-lg-3">
+                    <i class="fas fa-edit horizontal-space-10px" [ngClass]="{'theme-color': updateIconClicked === i}" 
+                    (click)="editBtnClicked(contactData, i);"></i>
+                    <i class="fas fa-trash-alt horizontal-space-10px" (click)="deleteBtnClicked(contactData)"></i>
+                    <i class="fas fa-share-alt horizontal-space-10px" [ngClass]="{'theme-color': shareIconClicked === i}"
+                    (click)="shareBtnClicked(i)"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div *ngIf="showAddEditForm" class="add-contacts-section vertical-space-20px">
+                <div class= "headings-row"><span>{{formHeading}}</span>
+                <i class="fas fa-times shift-right" (click)="showAddEditForm = false"></i></div>
+            <form>
+                <div class="form-group">
+                    <label for="fNAme">First Name</label>
+                    <input class="form-control" name="firstName" [(ngModel)]="formData.firstName" id="fNAme" placeholder="first name">
+                </div>
+                <div class="form-group">
+                    <label for="lName">Last Name</label>
+                    <input class="form-control" name="lastName" [(ngModel)]="formData.lastName" id="lName"  placeholder="last name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="email" name="email"
+                    [(ngModel)]="formData.email">
+                </div>
+                <div class="form-group">
+                    <label for="phNumber">Phone Number</label>
+                    <input class="form-control" type="number" name="phNumber" [(ngModel)]="formData.phNumber" id="phNumber"  placeholder="phone number">
+                </div>
+                <input type="submit" [disabled] = "formData.firstName.length === 0" class="btn btn-primary" value="{{formButtonText}}" (click)="saveContact()"/>
+            </form>
+        </div>
+        </div>
+    </div>
