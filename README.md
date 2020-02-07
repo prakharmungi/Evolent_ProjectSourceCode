@@ -1,4 +1,5 @@
 # ContactInformationApp
+
 ## This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
 This incudes the use of,  
 Libraries like -  
@@ -8,6 +9,7 @@ Libraries like -
 and Frameworks like -  
 Bootstrap4  
 ----------------------------------------------------------------------------------
+
 # Functionalities - 
 This app enables users to  
 1.View their contacts  
@@ -19,7 +21,7 @@ Note - This is just a representation of the idea, it is not functional.
 -----------------------------------------------------------------------------------
 
 # Steps for running the project on local environment- 
-Prerequisites - 
+Prerequisites -  
 Node.js and Angular cli (ver.8.3.24) should be installed in the server machine.  
 1.At root level of the project, in the command prompt, give the below command -  
 --> npm install  
