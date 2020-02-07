@@ -26,7 +26,7 @@ Node.js and Angular cli (ver.8.3.24) should be installed on the machine.
 1.At root level of the project, in the command prompt, give the below command -  
 --> npm install  
 This will install all the dependencies listed in the package.json file and node_modules folder will be created.  
-2.Then to the application locally, give the below command -  
+2.Then to run the application locally, give the below command -  
 --> ng serve  
 This will host the application on the default port 4200.  
 3.Set up fake json server locally using "json-server". For this install from npm,  
